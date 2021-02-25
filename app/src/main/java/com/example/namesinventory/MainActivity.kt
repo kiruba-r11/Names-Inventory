@@ -16,17 +16,19 @@ class MainActivity : AppCompatActivity() {
 
         var name: String
         var arrayList = ArrayList<String>()
+        val namesAdapter = ArrayAdapter<String>(this,
+                R.layout.names_list_layout,
+                R.id.nameTextView,
+                arrayList
+        )
+        listViewOfNames.adapter = namesAdapter
         button.setOnClickListener {
             name = editText.text.toString()
-            listViewOfNames.adapter = ArrayAdapter<String>(this,
-                    R.layout.names_list_layout,
-                    R.id.nameTextView,
-                    arrayList
-            )
             if(name.isNotEmpty())
                 arrayList.add(name)
             else
                 Toast.makeText(this , "Text is empty", Toast.LENGTH_SHORT).show()
+            namesAdapter.notifyDataSetChanged()
         }
     }
 }
