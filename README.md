@@ -110,3 +110,10 @@ $ git push -u origin Branch_Name
 
 Then, go to your repository in browser and click on `compare and pull requests`.
 Then add a title and description to your pull request.
+
+### Screenshots of the App
+<table>
+  <tr>
+    <td> <img src="screenshots/app_1.jpg" width="210" height="380"> </td>
+  </tr>
+</table>
