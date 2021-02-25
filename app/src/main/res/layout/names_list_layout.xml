@@ -6,12 +6,17 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:background="@color/grey"
         android:id="@+id/nameTextView"
         android:textStyle="bold"
-        android:textSize="24sp"
+        android:textSize="20sp"
         tools:text="HELLO"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/purple_700"
         android:padding="10dp"
-        android:layout_margin="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

@@ -3,8 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_margin="10dp"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="@font/cabin"
+            android:hint="Enter your name : "
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:backgroundTint="@color/purple_500"
+            android:id="@+id/button"
+            android:layout_marginRight="8dp"
+            android:layout_width="0dp"
+            android:text="ADD"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="@font/cabin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
     <ListView
         android:id="@+id/listViewOfNames"
